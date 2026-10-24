@@ -17,7 +17,7 @@ addButton.addEventListener("click", async function () {
     cancelButtonText: "Cancel",
   });
     if (!addName) return;
-   const API_KEY = "YOUR_API_KEY_HERE";
+   const apikey = "YOUR_API_KEY_HERE";
 
   const response = await fetch(
     `https://www.omdbapi.com/?t=${addName}&apikey=${apikey}`,
