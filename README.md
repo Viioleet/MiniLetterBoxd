@@ -1,5 +1,5 @@
-# MiniLetterbox
-Basic letterBox
+# MiniLetterboxd
+Basic letterBoxd
 
 
 <img width="2559" height="1278" alt="resim" src="https://github.com/user-attachments/assets/2e3a80c2-2efb-4e7e-9bad-a89e21531e48" />
@@ -25,7 +25,7 @@ OMDb API for movie data
 Getting Started
 Clone the repository:
 bash
-   git clone https://github.com/YOUR-USERNAME/MiniLetterBox.git
+   git clone https://github.com/Viioleet/MiniLetterBoxd.git
 Get a free API key from https://www.omdbapi.com/apikey.aspx.
 Open the `script.js` file and enter your key at the top:
 js
