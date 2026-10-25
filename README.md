@@ -41,4 +41,4 @@ A small web app inspired by Letterboxd that lets you create a movie watchlist. Y
 
 **Note:** Do not add your actual API key to GitHub.
 
-Sadik: Written as a personal development project
+Viioleet: Written as a personal development project
