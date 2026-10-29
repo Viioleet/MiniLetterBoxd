@@ -2,73 +2,90 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(209, 201, 182);
+  background-color: #0e0e0e;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
 }
 .mainT {
-  text-align: center;
-    box-shadow: 1px 20px 3px black;
-
-
-  background-color: rgb(192, 187, 175);
+  text-align: left;
   width: 100%;
-  font-size: 50px;
-  border-radius: 20px;
-  color: rgb(241, 239, 239);
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #e50914;
+  padding: 20px 40px;
 }
-.table{
+.table {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items: flex-start;
   flex-wrap: wrap;
-gap: 40px;
-margin-top: 40px;
-
-  
+  gap: 24px;
+  margin-top: 20px;
+  padding: 0 40px 100px;
 }
-.k1{
+.k1 {
+  position: relative;
   display: flex;
-  justify-self: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  background-color: gray;
-  width: 450px;
-  border-radius: 20px;
+  background-color: #1a1a1a;
+  width: 230px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 20px 5px 5px black;
-
+  cursor: pointer;
+  transition: transform 0.3s;
 }
-.k1:hover{
-  background-color: rgb(165, 164, 164);
-  zoom : 107%;
-  transition: transform 0.2s
+.k1:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+}
+.k1 img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 0;
+  padding-top: 0;
+  display: block;
+}
+.k1 label {
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 8px;
   
 }
-#add:hover{
-  zoom : 110%;
-
-}
-#remove:hover{
-  zoom : 110%;
-
-}
-#search:hover{
-  zoom : 110%;
-
-}
-.k1 label{
-  font-size: 25px;
-  color: white;
-  padding-top: 10px;
-}
-.k1 img{
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-
-  padding-top: 10px;
-}
-
 footer{
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  margin-top: 500px;
+  margin-left: 42%;
+
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  width: 400px;
+}
+#add,
+#remove,
+#search {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+.edit{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+#add:hover,
+#remove:hover,
+#search:hover {
+  background-color: #e50914;
 }

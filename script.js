@@ -16,17 +16,35 @@ addButton.addEventListener("click", async function () {
     showCancelButton: true,
     cancelButtonText: "Cancel",
   });
-    if (!addName) return;
-   const apikey = "YOUR_API_KEY_HERE";
+    if (!addName)   return;
+   
+  
+
+    
+   const apikey = "Enter Your Api";
 
   const response = await fetch(
     `https://www.omdbapi.com/?t=${addName}&apikey=${apikey}`,
   );
   const data = await response.json();
  
+   if(!data.Title){
+    Swal.fire({
+      icon: "error",
+      title: "Error!",
+      text: "Something Wrong Check All Field And Try Again.",
+      confirmButtonText: "Okey",
+      background: "#fff0c7",
+    });
+    return;
+   }
+  
  const exists = filmList.some((lists) => lists.title.toLowerCase() == data.Title.toLowerCase());
 
-  if (exists || addName == "" || !data.Title) {
+ 
+ 
+ 
+  if (exists) {
     Swal.fire({
       icon: "error",
       title: "Error!",
@@ -36,6 +54,7 @@ addButton.addEventListener("click", async function () {
     });
     return;
   }
+  
   
   filmList.push({ title: data.Title, poster: data.Poster });
   localStorage.setItem("films", JSON.stringify(filmList));
