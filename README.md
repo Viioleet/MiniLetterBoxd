@@ -2,7 +2,8 @@
 Basic letterBoxd
 
 
-<img width="2559" height="1278" alt="resim" src="https://github.com/user-attachments/assets/2e3a80c2-2efb-4e7e-9bad-a89e21531e48" />
+<img width="2556" height="1265" alt="resim" src="https://github.com/user-attachments/assets/60b731ab-888f-4ce8-9f55-112bdef4bb09" />
+
 
 # LetterBoxd
 
